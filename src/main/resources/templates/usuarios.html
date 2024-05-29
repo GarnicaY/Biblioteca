@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/usuario.css">
+</head>
+    
+<body>
+    <div class="container">
+        <center>
+            <h2>Biblioteca</h2>
+        </center><br><br>
+            <div class="p-3">
+                <a th:href="@{/mostrarSolicitudes/formSolicitud}" class="btn btn-primary btn-lg btn-block">Hacer Solicitud</a>
+            </div>
+            <div class="p-3">
+                <a th:href="@{/mostrarSolicitudUser}" class="btn btn-primary btn-lg btn-block">Ver Solicitudes</a>
+            </div>
+			<div class="d-flex justify-content-center">
+				<div class="p-3"><br><a th:href="@{/index}" class="btn btn-info">Inicio</a></div>
+			</div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>

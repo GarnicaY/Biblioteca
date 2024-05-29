@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html">
+    <title>Administradores Registrados</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">	
+	<link rel="stylesheet" type="text/css" href="/css/admin.css">
+</head>
+
+<body>
+<div class="container p-4">
+    <center><h2>Administradores Registrados</h2></center><br><br>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Acciones</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr th:each="admin: ${listaAdmin}">
+            <td th:text="${admin.id}"></td>
+            <td th:text="${admin.nombre}"> </td>
+            <td th:text="${admin.email}"> </td>
+            <td>
+                <a class="btn btn-warning btn-xs" th:href="@{'/admin/editar'+ '/' + ${admin.id}}" th:text="'editar'"></a>
+                &nbsp; &nbsp;
+                <a class="btn btn-danger btn-xs" th:href="@{'/admin/eliminar'+ '/' + ${admin.id}}" th:text="'eliminar'"></a>
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+    <div class="d-flex justify-content-center">
+        <div class="p-3  "><br><a th:href="@{/mostrarAdmin/formAdmin}" class="btn btn-primary">Insertar Administrador</a></div>
+		<div class="p-3"><br>
+		   <a th:href="@{/mostrarUsuarios}" class="btn btn-primary">Administar Usuarios</a>
+		</div>
+		<div class="p-3"><br>
+			<a th:href="@{/mostrarSolicitudes}" class="btn btn-primary">Administar Solicitudes</a>
+		</div>
+		<div class="p-3"><br>
+			<a th:href="@{/mostrarLibros}" class="btn btn-primary">Administrar libros</a>
+		</div><br>
+        <div class="p-3 "><br><a th:href="@{/index}" class="btn btn-outline-success">Inicio</a></div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

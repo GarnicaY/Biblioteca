@@ -1,0 +1,15 @@
+com\trabajoquiz\app\TrabajoQuizApplication.class
+com\trabajoquiz\app\controller\userController.class
+com\trabajoquiz\app\controller\libroController.class
+com\trabajoquiz\app\repository\libroCrud.class
+com\trabajoquiz\app\entity\Libro.class
+com\trabajoquiz\app\entity\Admin.class
+com\trabajoquiz\app\entity\User.class
+com\trabajoquiz\app\repository\adminCrud.class
+com\trabajoquiz\app\entity\Solicitud.class
+com\trabajoquiz\app\controller\solicitudController.class
+com\trabajoquiz\app\controller\usuarioController.class
+com\trabajoquiz\app\repository\userCrud.class
+com\trabajoquiz\app\controller\adminController.class
+com\trabajoquiz\app\controller\indexController.class
+com\trabajoquiz\app\repository\solicitudCrud.class

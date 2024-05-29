@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html">
+    <title>Solicitudes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/verSolicitud.css">
+</head>
+
+<body>
+<div class="container">
+    <center><h2>Solicitudes</h2></center><br><br>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Usuario</th>
+            <th>Libro Solicitado</th>
+            <th>Estado</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="solicitud: ${listarSolicitudUser}">
+            <td th:text="${solicitud.id}"></td>
+            <td th:text="${solicitud.nombreUsuario}"></td>
+            <td th:text="${solicitud.libroSolicitado.titulo}"></td>
+            <td th:text="${solicitud.estado}"></td>
+            <td>
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+    <div class="d-flex justify-content-center">
+        <div class="p-3 "><br><a th:href="@{/usuarios}" class="btn btn-outline-info">Regresar</a></div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>

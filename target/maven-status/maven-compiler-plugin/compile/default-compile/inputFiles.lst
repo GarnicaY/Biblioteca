@@ -1,0 +1,15 @@
+D:\TrabajosSpring\TrabajoQuiz\src\main\java\com\trabajoquiz\app\controller\adminController.java
+D:\TrabajosSpring\TrabajoQuiz\src\main\java\com\trabajoquiz\app\controller\indexController.java
+D:\TrabajosSpring\TrabajoQuiz\src\main\java\com\trabajoquiz\app\controller\libroController.java
+D:\TrabajosSpring\TrabajoQuiz\src\main\java\com\trabajoquiz\app\controller\solicitudController.java
+D:\TrabajosSpring\TrabajoQuiz\src\main\java\com\trabajoquiz\app\controller\userController.java
+D:\TrabajosSpring\TrabajoQuiz\src\main\java\com\trabajoquiz\app\controller\usuarioController.java
+D:\TrabajosSpring\TrabajoQuiz\src\main\java\com\trabajoquiz\app\entity\Admin.java
+D:\TrabajosSpring\TrabajoQuiz\src\main\java\com\trabajoquiz\app\entity\Libro.java
+D:\TrabajosSpring\TrabajoQuiz\src\main\java\com\trabajoquiz\app\entity\Solicitud.java
+D:\TrabajosSpring\TrabajoQuiz\src\main\java\com\trabajoquiz\app\entity\User.java
+D:\TrabajosSpring\TrabajoQuiz\src\main\java\com\trabajoquiz\app\repository\adminCrud.java
+D:\TrabajosSpring\TrabajoQuiz\src\main\java\com\trabajoquiz\app\repository\libroCrud.java
+D:\TrabajosSpring\TrabajoQuiz\src\main\java\com\trabajoquiz\app\repository\solicitudCrud.java
+D:\TrabajosSpring\TrabajoQuiz\src\main\java\com\trabajoquiz\app\repository\userCrud.java
+D:\TrabajosSpring\TrabajoQuiz\src\main\java\com\trabajoquiz\app\TrabajoQuizApplication.java
